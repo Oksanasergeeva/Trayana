@@ -1,0 +1,1475 @@
+body {
+  background-color: #080808;
+  background-image: url("../img/black-background.jpg");
+  background-size: 1200px;
+  background-repeat: repeat-x;
+  color: rgb(255, 255, 255);
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 16px;
+}
+
+.visually-hidden {
+	position: absolute;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	width: 1px;
+	margin: -1px;
+	padding: 0;
+	border: 0;
+}
+
+a {
+  color: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+  text-decoration: none;
+  line-height: inherit;
+}
+
+.center {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+}
+
+.phone-search {
+  width: 400px;
+  padding-top: 30px;
+  position: relative;
+}
+
+.phone {
+  display: inline-block;
+  min-height: 34px;
+  vertical-align: baseline;
+  padding-left: 34px;
+  position: relative;
+  font-family: "Arial black", sans-serif;
+  font-weight: 100;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.phone::before {
+  content: " ";
+  width: 34px;
+  height: 34px;
+  background-image: url("../img/phone.svg");
+  background-color: rgb(6, 172, 72);
+  border-radius: 25%;
+  left: -7px;
+  top: -10px;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px 20px;
+}
+
+.header-serch input {
+  width: 320px;
+  height: 30px;
+  padding-right: 30px;
+  min-height: 20px;
+  border: 2px solid rgb(6, 172, 72);
+  position: relative;
+}
+
+.header-serch input::before {
+  content: " ";
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  background-color: red;
+  left: 30px;
+  top: 30px;
+}
+
+.label-help {
+  display: inline-block;
+  font-size: 0px;
+}
+
+.header-serch input:hover {
+  border: 2px solid rgb(142, 243, 182);
+}
+
+.header-serch input:focus::-webkit-input-placeholder {
+  font-size: 0px;
+}
+
+.header-serch input:focus::-moz-placeholder {
+  font-size: 0px;
+}
+
+.header-serch input:focus:-moz-placeholder {
+  font-size: 0px;
+}
+
+.header-serch input:focus:-ms-input-placeholder {
+  font-size: 0px;
+}
+
+.header-serch input:focus + .label-help {
+  font-size: 12px;
+  color: rgb(6, 172, 72);
+}
+
+.header-serch input:focus {
+  outline: 0;
+}
+
+.header-addres {
+  font-size: 14px;
+  font-weight: normal;
+  padding-top: 30px;
+}
+
+.header-addres span {
+  display: inline-block;
+  width: 250px;
+}
+
+.header-addres a:last-child {
+  color: rgb(6, 172, 72);
+  text-decoration: underline;
+}
+
+.logo {
+  width: 400px;
+}
+
+.logo img:first-child {
+  margin-left: 50px;
+}
+
+.first-line-header {
+  width: 1200px;
+  font-size: 18px;
+  list-style-type: none;
+  padding: 0px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.site-navigation {
+  width: 1200px;
+  font-size: 18px;
+  list-style-type: none;
+  padding: 0px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: baseline;
+}
+
+.header-main:hover, .header-catalog:hover, .header-service:hover, .header-examples:hover, .header-contacts:hover, .header-partnership:hover {
+  color: rgb(6, 172, 72);
+  border-bottom: 2px solid rgb(6, 172, 72);
+}
+
+.catalog-modal {
+  width: 230px;
+  display: none;
+  position: absolute;
+  list-style-type: none;
+  padding: 0;
+  top: 21px;
+  left: -10px;
+  font-size: 15px;
+  background-color: rgba(0, 0, 0, 1);
+  -webkit-box-shadow: -2px 41px 30px 10px rgba(0, 0, 0, 0.51);
+  -moz-box-shadow: -2px 41px 30px 10px rgba(0, 0, 0, 0.51);
+  box-shadow: -2px 41px 30px 10px rgba(0, 0, 0, 0.51);
+  border-radius: 10px;
+  z-index: 5;
+  color: rgba(255, 255, 255, 1);
+}
+
+.catalog-modal li {
+  display: inline-block;
+  padding-top: 8px;
+  padding-bottom: 6px;
+  padding-left: 10px;
+  width: 100%;
+}
+
+.catalog-modal li:first-of-type {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.catalog-modal li:last-child {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.catalog-modal li:hover {
+  background-color: rgba(6, 172, 72, 0.7);
+  color: rgb(0, 0, 0);
+}
+
+.header-catalog {
+  position: relative;
+}
+
+.header-catalog:hover .catalog-modal {
+  display: block;
+}
+
+.current-page {
+  border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+.slider-mail {
+  width: 1200px;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.slider {
+  width: 700px;
+  outline: 0px;
+}
+
+.slider__controls {
+  position: relative;
+}
+
+.slider__controls-previous,
+.slider__controls-next {
+  position: absolute;
+
+  font-size: 40px;
+  text-decoration: none;
+  color: black;
+}
+
+.slider__controls-previous,
+.slider__controls-next {
+  margin-top: 200px;
+}
+
+.slider__controls-previous {
+  left: 10px;
+}
+
+.slider__controls-next {
+  right: 20px;
+}
+
+.slider__controls-previous::before {
+  content: "\3c";
+  color: rgb(255, 255, 255);
+}
+
+.slider__controls-next::before {
+  content: "\3e";
+  color: rgb(255, 255, 255);
+  top: 100px;
+  right: 0;
+}
+
+.slider__items-item {
+  display: none;
+  width: 700px;
+
+  font-size: 15px;
+  outline: 0px;;
+}
+
+.slider__items-item_active {
+  display: inline-block;
+}
+
+.slider__items-item-title {
+  margin: 0;
+  padding: 0;
+  font-size: 26px;
+}
+
+.slider__items-item-text {
+  text-align: center;
+}
+
+.slider__items-item img {
+  margin-left: 30px;
+}
+
+.mailing {
+  width: 400px;
+  position: relative;
+}
+
+.mailing::before {
+  content: " ";
+  width: 40px;
+  height: 30px;
+  background-image: url("../img/mail.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 40px;
+  position: absolute;
+  top: -30px;
+  left: 150px;
+}
+
+.mailing input {
+  width: 270px;
+  height: 40px;
+  border-radius: 5px;
+}
+
+.mailing input:hover {
+  border: 2px solid rgb(6, 172, 72);
+}
+
+.mailing input:focus {
+  outline: 0;
+  border: 2px solid rgb(6, 172, 72);
+}
+
+
+.mailing button {
+  float: right;
+  width: 110px;
+  height: 40px;
+  background-color: rgb(255, 255, 255);
+  border: 2px solid #000000;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 5px 3px rgba(255, 255, 255,0.55);
+  -moz-box-shadow: 0px 0px 5px 3px rgba(255, 255, 255,0.55);
+  box-shadow: 0px 0px 5px 3px rgba(255, 255, 255,0.55);
+}
+
+.mailing button:hover {
+  -webkit-box-shadow: inset 0px 0px 2px 1px rgba(0,0,0,0.75);
+  -moz-box-shadow: inset 0px 0px 2px 1px rgba(0,0,0,0.75);
+  box-shadow: inset 0px 0px 2px 1px rgba(0,0,0,0.75);
+}
+
+.mailing button:focus {
+  outline: 0;
+  -webkit-box-shadow: inset 0px 0px 2px 1px rgba(0,0,0,0.75);
+  -moz-box-shadow: inset 0px 0px 2px 1px rgba(0,0,0,0.75);
+  box-shadow: inset 0px 0px 2px 1px rgba(0,0,0,0.75);
+}
+
+.index-map img {
+  position: absolute;
+  z-index: -10;
+}
+
+.index-map {
+  height: 400px;
+  position: relative;
+}
+
+.index-map iframe {
+  position: absolute;
+  z-index: 10;
+}
+
+.social {
+  width: 200px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0px;
+  margin: 20px auto;
+  list-style-type: none;
+  z-index: 11;
+}
+
+.products {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  font-size: 16px;
+  background: -moz-linear-gradient(270deg, rgba(148,148,148,0.15) 0%, rgba(148,148,148,0.15) 21%, rgba(148,148,148,0.4) 31%, rgba(92,92,92,1) 55%, rgba(0,0,0,1) 95%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(148,148,148,0.15)), color-stop(21%, rgba(148,148,148,0.15)), color-stop(31%, rgba(148,148,148,0.4)), color-stop(55%, rgba(92,92,92,1)), color-stop(95%, rgba(0,0,0,1)));
+  background: -webkit-linear-gradient(270deg, rgba(148,148,148,0.15) 0%, rgba(148,148,148,0.15) 21%, rgba(148,148,148,0.4) 31%, rgba(92,92,92,1) 55%, rgba(0,0,0,1) 95%);
+  background: -o-linear-gradient(270deg, rgba(148,148,148,0.15) 0%, rgba(148,148,148,0.15) 21%, rgba(148,148,148,0.4) 31%, rgba(92,92,92,1) 55%, rgba(0,0,0,1) 95%);
+  background: -ms-linear-gradient(270deg, rgba(148,148,148,0.15) 0%, rgba(148,148,148,0.15) 21%, rgba(148,148,148,0.4) 31%, rgba(92,92,92,1) 55%, rgba(0,0,0,1) 95%);
+  background: linear-gradient(180deg, rgba(148,148,148,0.15) 0%, rgba(148,148,148,0.15) 21%, rgba(148,148,148,0.4) 31%, rgba(92,92,92,1) 55%, rgba(0,0,0,1) 95%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#949494', endColorstr='#000000',GradientType=0 );
+  box-shadow: 0px 0px 10px 10px rgba(148,148,148,0.15);
+}
+
+.index-item {
+  width:  250px;
+  cursor: pointer;
+  padding-bottom: 10px;
+}
+
+.index-item span {
+  margin-left: 20px;
+  padding-bottom: 10px;
+}
+
+.index-item:hover {
+  -webkit-box-shadow: -1px 0px 37px 0px rgba(0,0,0,0.74);
+  -moz-box-shadow: -1px 0px 37px 0px rgba(0,0,0,0.74);
+  box-shadow: -1px 0px 37px 0px rgba(0,0,0,0.74);
+  background-color: rgba(0,0,0,0.3);
+  color: rgb(6, 172, 72);
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.main-footer {
+  width: 1200px;
+  min-height: 60px;
+}
+
+.instagram::before {
+  content: " ";
+  width: 30px;
+  height: 30px;
+  background-image: url("../img/instagram.svg");
+  background-position: center;
+  background-size: 30px;
+  background-repeat: no-repeat;
+  position: absolute;
+}
+
+.instagram:hover::before {
+  content: " ";
+  width: 30px;
+  height: 30px;
+  background-image: url("../img/instagram-green.svg");
+  background-position: center;
+  background-size: 30px;
+  background-repeat: no-repeat;
+  position: absolute;
+}
+
+.instagram:focus::before {
+  content: " ";
+  width: 30px;
+  height: 30px;
+  background-image: url("../img/instagram-green.svg");
+  background-position: center;
+  background-size: 30px;
+  background-repeat: no-repeat;
+  position: absolute;
+}
+
+.vkontakte::before {
+  content: " ";
+  width: 30px;
+  height: 30px;
+  background-image: url("../img/vk.svg");
+  background-position: center;
+  background-size: 30px;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 40px;
+}
+
+.vkontakte:hover::before {
+  content: " ";
+  width: 30px;
+  height: 30px;
+  background-image: url("../img/vk-green.svg");
+  background-position: center;
+  background-size: 30px;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 40px;
+}
+
+.vkontakte:focus::before {
+  content: " ";
+  width: 30px;
+  height: 30px;
+  background-image: url("../img/vk-green.svg");
+  background-position: center;
+  background-size: 30px;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 40px;
+}
+
+.youtube::before {
+  content: " ";
+  width: 30px;
+  height: 30px;
+  background-image: url("../img/youtube.svg");
+  background-position: center;
+  background-size: 30px;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 80px;
+}
+
+.youtube:hover::before {
+  content: " ";
+  width: 30px;
+  height: 30px;
+  background-image: url("../img/youtube-green.svg");
+  background-position: center;
+  background-size: 30px;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 80px;
+}
+
+.youtube:focus::before {
+  content: " ";
+  width: 30px;
+  height: 30px;
+  background-image: url("../img/youtube-green.svg");
+  background-position: center;
+  background-size: 30px;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 80px;
+}
+
+.catalog {
+  width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.item {
+  width: 450px;
+}
+
+.item:nth-of-type(3){
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.item a {
+  display: inline-block;
+  margin-left: 100px;
+  padding-bottom: 10px;
+}
+
+.item a span{
+  padding-left: 20px;
+}
+
+.item a:hover {
+-webkit-box-shadow: -1px 0px 37px 0px rgba(0,0,0,0.74);
+-moz-box-shadow: -1px 0px 37px 0px rgba(0,0,0,0.74);
+box-shadow: -1px 0px 37px 0px rgba(0,0,0,0.74);
+background-color: rgba(0,0,0,0.3);
+color: rgb(6, 172, 72);
+}
+
+/* Услуги */
+
+.options-photo {
+  width: 900px;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.options-photo article {
+  width: 400px;
+  position: relative;
+}
+
+.modal {
+  display: none;
+}
+
+.punching {
+  width: 150px;
+  padding-top: 50px;
+  height: 268px;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.6);
+  text-transform: uppercase;
+  top: 0;
+  left: 0;
+}
+
+.options-photo article:hover  .punching {
+  display: block;
+}
+
+.promo-options {
+  width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.promo-options article {
+  position: relative;
+  width: 200px;
+}
+
+.promo-options img {
+  position: absolute;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  border: 2px solid #01b050;
+}
+
+.green-promo-option {
+  position: absolute;
+  width: 150px;
+  min-height: 150px;
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background-color: #9bc546;
+  left: 70px;
+  top: 100px;
+  -webkit-box-shadow:
+    inset 0px -10px 5px 0px rgba(50, 50, 50, 0.75),
+    inset 1px 10px 5px 0px rgba(255, 255, 255, 0.75);
+  -moz-box-shadow:
+    inset 0px -10px 5px 0px rgba(50, 50, 50, 0.75),
+    inset 1px 10px 5px 0px rgba(255, 255, 255, 0.75);
+  box-shadow:
+    inset 0px -10px 5px 0px rgba(50, 50, 50, 0.75),
+    inset 1px 10px 5px 0px rgba(255, 255, 255, 0.75);
+  text-align: center;
+}
+
+.promo-options article:not(:last-of-type)::before {
+  content: "";
+  position: absolute;
+  left: 210px;
+  top: 43px;
+  border: 15px solid transparent;
+  border-left: 15px solid rgb(255, 255, 255);
+}
+
+.promo-options article:not(:last-of-type)::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 15px;
+  background-color: rgb(255, 255, 255);
+  left: 190px;
+  top: 50px;
+}
+
+.option-promo-price  {
+  display: block;
+  font-size: 30px;
+  margin: auto auto;
+  vertical-align: middle;
+}
+
+.options-price {
+  color: rgb(6, 172, 72);
+  font-size: 20px;
+}
+
+.options-price:hover {
+  text-decoration: underline;
+}
+
+/* диффузоры */
+/* хлебные крошки */
+
+.breadcrumbs {
+  padding: 0;
+  list-style: none;
+  width: auto;
+  display: flex;
+}
+
+.breadcrumbs li {
+  margin-right: 20px;
+  text-decoration: underline;
+  position: relative;
+}
+
+.breadcrumbs li:not(:last-child):hover {
+  color: rgb(6, 172, 72);
+}
+
+.breadcrumbs li:not(:last-child)::after {
+  content: " ";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-top: 2px solid #ffffff;
+  border-right: 2px solid #ffffff;
+  top: 3px;
+  right: -12px;
+  transform: rotate(45deg);
+}
+
+.breadcrumbs li:not(:last-child):hover::after {
+  content: " ";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-top: 2px solid rgb(6, 172, 72);
+  border-right: 2px solid rgb(6, 172, 72);
+  top: 3px;
+  right: -12px;
+  transform: rotate(45deg);
+}
+
+.breadcrumbs li:not(:last-child):hover::after {
+  content: " ";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-top: 2px solid rgb(6, 172, 72);
+  border-right: 2px solid rgb(6, 172, 72);
+  top: 3px;
+  right: -12px;
+  transform: rotate(45deg);
+}
+
+li.current-breadcrumds {
+  color: #7d7f7d;
+  text-decoration: none;
+}
+
+/* Вихревые диффузоры */
+
+.about-diffusers{
+  width: 1000px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+}
+
+.name-batch img {
+  border-radius: 2%;
+}
+
+.name-batch {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 250px;
+}
+
+.name-batch a {
+  color: rgb(0, 0, 255);
+  text-decoration: underline;
+}
+
+.name-batch a:hover {
+  color: rgb(6, 172, 72);
+  font-weight: bold;
+}
+
+.diffuzer-sentence {
+  width: 400px;
+  margin-top: 150px;
+}
+
+.diffuzer-sentence p {
+  text-align: center;
+  line-height: 25px;
+  font-size: 20px;
+}
+
+.sentence a, .diffuzer-sentence a {
+  font-size: 20px;
+  color: rgb(6, 172, 72);
+  text-decoration: underline;
+}
+
+.sentence a:hover, .diffuzer-sentence a:hover {
+  text-decoration: none;
+}
+
+.sentence p {
+  font-size: 18px;
+  padding: 10px;
+}
+
+/* Вихревые диффузоры GALAXY */
+
+.about-galaxy, .about-star, .about-lenti, .about-sun {
+  margin-left: 40px;
+}
+
+.about-galaxy h2, .about-star h2, .about-lenti h2, .about-sun h2 {
+  font-size: 23px;
+}
+
+.about-galaxy p, .about-star p, .about-lenti p, .about-sun p {
+  display: inline-block;
+  width: 800px;
+  font-size: 20px;
+}
+
+.sentence {
+  margin-left: 40px;
+  width: 800px;
+}
+
+.galaxy-album, .lenti-album, .star-album, .sun-album {
+  widows: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.galaxy-for-diffusers td, .lenti-for-diffusers td, .star-for-diffusers td, .sun-for-diffusers td {
+  border: 2px solid white;
+}
+
+.galaxy-for-diffusers td:hover, .lenti-for-diffusers td:hover, .star-for-diffusers td:hover, .sun-for-diffusers td:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.galaxy-for-diffusers td:focus, .lenti-for-diffusers td:focus, .star-for-diffusers td:focus, .sun-for-diffusers td:focus {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+
+.galaxy-for-diffusers, .lenti-for-diffusers, .star-for-diffusers, .sun-for-diffusers {
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.price-list {
+  display: inline-block;
+  color: rgb(6, 172, 72);
+  padding: 10px;
+  font-size: 20px;
+}
+
+.price-list:hover {
+  text-decoration: underline;
+}
+
+/* Каталог вентиляционных решеток */
+
+.types-of-gratings {
+  width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.grates-price {
+  width: auto;
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 20px;
+}
+
+.grates-price a {
+  display: inline-block;
+  font-size: 20px;
+  color: #029f38;
+}
+
+.grates-price a:hover {
+  text-decoration: underline;
+}
+
+.grate-item {
+  width: 350px;
+  margin-bottom: 20px;
+  padding: 15px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.grate-item img {
+  margin: 10px;
+}
+
+.grate-item a {
+  color: #0000ff;
+  text-decoration: underline;
+}
+
+.grate-item:hover {
+  -webkit-box-shadow: -2px 0px 33px -1px rgba(255,255,255,1);
+  -moz-box-shadow: -2px 0px 33px -1px rgba(255,255,255,1);
+  box-shadow: -2px 0px 33px -1px rgba(255,255,255,1);
+  background-color: rgba(255,255,255,0.1);
+  color: #f2ff1b;
+}
+
+.grate-item a:hover {
+  color: rgb(6, 172, 72);
+  text-decoration: none;
+}
+
+.grate-item a:active {
+  color: rgb(6, 172, 72);
+  text-decoration: none;
+}
+
+/* Страницы каталога с решетками */
+
+.grate-descriptoin {
+  width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.grate-descriptoin p {
+  display: inline-block;
+  width: 500px;
+}
+
+.grate-descriptoin img {
+  margin: 10px;
+}
+
+.grate-descriptoin a {
+  color: rgb(6, 172, 72);
+  font-size: 20px;
+  display: inline-block;
+  padding: 10px;
+  margin-top: 20px;
+  border: 2px solid rgb(6, 172, 72);
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+.grate-descriptoin a:hover {
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  -webkit-box-shadow: inset 2px 2px 5px 0px rgba(255,255,255,1);
+  -moz-box-shadow: inset 2px 2px 5px 0px rgba(255,255,255,1);
+  box-shadow: inset 2px 2px 5px 0px rgba(255,255,255,1);
+}
+
+.grate-descriptoin a:active {
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  -webkit-box-shadow: inset 2px 2px 5px 0px rgba(255,255,255,1);
+  -moz-box-shadow: inset 2px 2px 5px 0px rgba(255,255,255,1);
+  box-shadow: inset 2px 2px 5px 0px rgba(255,255,255,1);
+  background-color: rgba(255,255,255,0.5);
+}
+
+.about-grate-color, .about-gal-i, .about-gal-sch, .about-krv {
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+
+.grate-sizes {
+  margin-top: 40px;
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.valve-grate, .tree-desire {
+  width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.valve-grate p, .tree-desire p  {
+  display: inline-block;
+  width: 500px;
+}
+
+.valve-grate img {
+  width: 400px;
+}
+
+.tree-desire {
+  margin-top: 30px;
+}
+
+.tree-desire span {
+  display: block;
+  padding: 20px 5px;
+}
+
+.screenshot-grate {
+  position: absolute;
+  z-index: 1;
+}
+
+.gif-grate {
+  position: absolute;
+  z-index: -1;
+}
+
+.grate-video {
+  position: relative;
+  width: 900px;
+  min-height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.grate-video:hover .gif-grate {
+  z-index: 2;
+}
+
+.hover-gif {
+  width: 500px;
+  position: relative;
+}
+
+.hatch-price {
+  width: auto;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.hatch-price a {
+  display: inline-block;
+  font-size: 20px;
+}
+
+.hatch-price a:hover {
+  color: #029f38;
+  text-decoration: underline;
+}
+
+/* Конвейерное оборудование */
+
+.conveyors-items {
+  width: 700px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.conveyors-item:first-of-type {
+  margin-left: 250px;
+}
+
+.conveyors-item {
+  margin-bottom: 30px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.conveyors-item img {
+  padding: 10px;
+}
+
+.conveyors-item:hover {
+  -webkit-box-shadow: -2px 0px 33px -1px rgba(255,255,255,1);
+  -moz-box-shadow: -2px 0px 33px -1px rgba(255,255,255,1);
+  box-shadow: -2px 0px 33px -1px rgba(255,255,255,1);
+  background-color: rgba(255,255,255,0.1);
+  color: rgb(6, 172, 72);
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+
+/* Ленточные конвейеры */
+
+.tape-conveyors-items {
+  display: flex;
+  width: 1200px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin: auto auto;
+}
+
+.tape-conveyor-item, .roller-conveyor-item {
+  width: 250px;
+  padding: 20px;
+  margin: 0 50px;
+  position: relative;
+}
+
+.conveyor-type {
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 1);
+}
+
+.tape-conveyor-item:hover .conveyor-type,  .roller-conveyor-item:hover .conveyor-type{
+  text-decoration: underline;
+}
+
+.tape-conveyor-item a, .roller-conveyor-item a {
+  display: block;
+  position: relative;
+}
+
+.tape-conveyor-item span,  .roller-conveyor-item span{
+  position: absolute;
+  font-size: 20px;
+  color: rgb(6, 172, 72);
+  top: 70%;
+  left: 5%;
+}
+
+
+/* Странички конвейеров и роликов */
+
+.showcase-tape, .showcase-roller, .showcase-roll {
+  width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.showcase-tape a, .showcase-roller a {
+  text-decoration: underline;
+}
+
+.showcase-tape a:hover, .showcase-roller a:hover {
+  text-decoration: none;
+  color: rgb(6, 172, 72);
+}
+
+.description-tape, .description-roller, .description-roll {
+  width: 600px;
+}
+
+.attention {
+  width: 100%;
+  padding: 20px 20px;
+  margin: 10px auto;
+  background-color: rgb(6, 172, 72);
+  text-align: center;
+}
+
+.about-tape, .selection-table-tape, .selection-table-roller, .about-roller {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.specification {
+  width: 600px;
+  margin: 40px auto;
+  color: rgb(0,0,0);
+}
+
+.readings {
+  width: 150px;
+}
+.specification caption {
+  color: rgb(254,254,254);
+}
+.specification td {
+  padding: 5px;
+}
+
+.green-table {
+  background-color: rgb(6, 172, 72);
+}
+.lightgreen-table {
+  background-color: rgb(144, 238, 144);
+}
+
+.about-office {
+  width: 800px;
+  margin: 40px auto;
+  position: relative;
+}
+
+.about-office a {
+  color: rgb(6, 172, 72);
+}
+
+.about-office a:hover {
+  text-decoration: underline;
+}
+
+.about-office a:active {
+  text-decoration: underline;
+}
+
+.suggestions {
+  width: 1100px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.tape-suggestion-item, .roller-suggestion-item {
+  padding: 10px;
+  position: relative;
+}
+
+.tape-suggestion-item span,  .roller-suggestion-item span{
+  display: inline-block;
+  position: absolute;
+  left: 6%;
+  top: 70%;
+}
+.conveyor-type, .suggestion-conveyor-type {
+  display: inline-block;
+  width: 190px;
+  color: rgb(6, 172, 72);
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 1);
+}
+
+.tape-suggestion-item:hover .suggestion-conveyor-type,  .roller-suggestion-item:hover .conveyor-type{
+  text-decoration: underline;
+}
+
+.red {
+  color: rgb(255,31,31);
+  text-decoration: underline;
+}
+
+.roller-conveyors-items {
+  display: flex;
+  width: 1200px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: auto auto;
+}
+
+/*  Примеры работ  */
+
+.photogallery-works {
+  width: 1200px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.photogallery-works, .conveyors-works-gallery {
+  width: 540px;
+}
+
+.work-photo {
+  width: 500px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.work-photo img {
+  margin: 20px auto;
+  margin-left: 40px;
+}
+
+.work-photo:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+}
+
+.show-hover {
+  display: none;
+}
+
+.work-photo:hover .show-hover{
+  display: block;
+  position: absolute;
+  left: 40px;
+  top: 314px;
+  font-size: 20px;
+  background-color: rgba(0,0,0,0.8);
+  width: 400px;
+  padding: 8px 0;
+}
+
+.call-us {
+  width: 250px;
+  position: fixed;
+  left: 80%;
+  top: 60%;
+  padding: 10px 5px;
+}
+
+.call-us:hover {
+  background-color: rgba(255,255,255,0.2);
+  border-radius: 5px;
+}
+
+.call-us a, .trayana-contacts a {
+  color: rgb(6, 172, 72);
+  text-decoration: underline;
+  padding: 5px;
+  line-height: 30px;
+}
+
+.call-us a:hover, .call-us a:active, .trayana-contacts a:hover, .trayana-contacts a:active {
+  text-decoration: none;
+}
+
+/* Контакты */
+
+.yandex-map {
+  width: 800px;
+  height: 500px;
+}
+
+.yandex-map img {
+  z-index: -1;
+  position: absolute;
+}
+
+.yandex-map iframe {
+  z-index: 1;
+}
+
+.trayana-contacts {
+  width: 1200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.trayana-contacts ul {
+  width: 330px;
+  padding: 0;
+  list-style: none;
+}
+
+.trayana-contacts li {
+  display: inline-block;
+  padding: 20px;
+  padding-right: 0;
+  line-height: 18px;
+}
+
+.trayana-contacts li {
+  position: relative;
+}
+
+.contact-addres::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-image: url("../img/contacts/factory.svg");
+  background-repeat: no-repeat;
+  background-size: 30px 30px;
+  left: -15px;
+  top: 30px;
+}
+
+.contact-mail::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-image: url("../img/contacts/deployment.svg");
+  background-repeat: no-repeat;
+  background-size: 30px 30px;
+  left: -15px;
+  top: 30px;
+}
+
+.contact-phone::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-image: url("../img/contacts/ladder.svg");
+  background-repeat: no-repeat;
+  background-size: 30px 30px;
+  left: -15px;
+  top: 30px;
+}
+
+.advantages-of-cooperation, .for-dealers {
+  width: 1000px;
+  margin: 40px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.advantages-of-cooperation a, .for-dealers a {
+  line-height: 30px;
+  color: rgb(6, 172, 72);
+  text-decoration: underline;
+}
+
+.advantages-of-cooperation a:hover, .for-dealers a:hover {
+  text-decoration: none;
+}
+
+.advantages-of-cooperation a:active, .for-dealers a:active {
+  text-decoration: none;
+}
+
+a.partnership-presentation {
+  color: #ff0000;
+}
